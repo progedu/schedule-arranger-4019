@@ -99,9 +99,6 @@ router.get('/:scheduleId', authenticationEnsurer, (req, res, next) => {
 
 
           //閲覧ユーザーと出欠に紐づくユーザーからユーザー Map (キー:ユーザー ID, 値:ユーザー) を作る
-
-          console.log(availabilityMapMap); // TODO 除去する
-
           res.render('schedule', {
             user: req.user,
             schedule: schedule,
