@@ -83,6 +83,7 @@ describe('/schedules', () => {
                   s.destroy().then(() => { 
                     if (err) return done(err);
                     done(); 
+
                   });
                 });
               });
